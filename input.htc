@@ -1,0 +1,26 @@
+<component>
+<attach event="onmouseover" onevent="obarvit('over')">
+<attach event="onmouseout" onevent="obarvit('out')">
+<attach event="onfocus" onevent="obarvit('foc')">
+<attach event="onblur" onevent="obarvit('blur')">
+
+<script>
+function obarvit(jak) {
+	if (element.type=='text' && jak=='foc') {
+		element.style.background = 'white'
+		element.style.border = '1px solid #2C241D'
+	}
+	if (element.type=='text' && jak=='blur') {
+		element.style.background = '#FBFAF9'
+		element.style.border = '1px solid #635141'
+	}
+	if (element.type=='submit' && jak=='over') {
+		element.style.background = "#a11c15 url('grafika/btn.gif') repeat-x"
+	}
+	if (element.type=='submit' && jak=='out') {
+		element.style.background = "#d6413a url('grafika/btn.gif') bottom repeat-x"
+	}
+}
+</script>
+
+</component>

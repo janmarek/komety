@@ -1,0 +1,149 @@
+﻿body, h2, h4, input {font-size:9pt;}
+body * {font-family: Verdana, 'Arial CE', 'Heveltica CE', Arial, Heveltica, sans-serif; font-size:inherit;}
+img {border:none;}
+/*nadpisy*/
+h1 {font-size:180%; margin:0; color:#D7640F;}
+p.popis {letter-spacing:0.1em; color:gray; margin:0 ! important; text-indent:0 ! important; font-size:8pt;}
+#text h2 {font-size:130%; color:#F07C26; padding:1.5em 0 0.5em; margin:0; clear:both;}
+#text p.popis+h2 {padding-top:0.5em;}
+#text h3 {font-size:110%; color:#F29148; padding:1em 0 0.2em; margin:0;}
+
+/*odstavec*/
+#text p {text-indent:2em; line-height:1.8em; padding:0.5em 0; margin:0;}
+/*zruseni odradkovani*/
+#text h2+p, #text h3+p, #text h2+.img+p, #text h3+.img+p, #text p.popis+p, #text p.popis+.img+p {text-indent:0;}
+/*text*/
+#text *>sub {vertical-align:normal; position:relative; bottom:-0.2em; font-size:7pt;}
+#text *>sup {vertical-align:normal; position:relative; top:-0.2em; font-size:7pt;}
+#text dfn {font-style:normal; background:#FAF4DE; color:black;}
+#text strong {color:#543F2C;}
+#text em {color:#543F2C; font-style:normal;}
+
+#text ul {margin:0; padding:0 0 0.5em 3em; line-height:1.8; list-style-type:disc;}
+/*blockquote*/
+#text blockquote {margin:0 0 1em 2em; color:#333;}
+#text blockquote p {text-indent:0; font-size:8pt; padding:0.5em 1em 0.5em 1em; border-left:0.5em solid #E8E8E8; background:#F8F8F8;}
+#text blockquote p:before {content:'„';}
+#text blockquote p:after {content:'“';}
+/*odkazy*/
+a {text-decoration:underline; color:#E12200;}
+a:visited {color:#FF3511;}
+a:hover {color:#ED8D23;}
+
+#text ul.odkazy {margin:0.5em 0; padding:0 0.5em; background:#F7F7F4; border:1px solid #DED8D1;}
+#text ul.odkazy li {margin:0; padding:0.5em 0; list-style-type:none; font-size:8pt;}
+#text ul.odkazy a {font-size:9pt; background-repeat:no-repeat; background-position:0 50%; padding-left:21px;}
+a.cz {background-image:url('grafika/cz.gif');}
+a.sk {background-image:url('grafika/sk.gif');}
+a.en {background-image:url('grafika/gb.gif');}
+/*clanky*/
+dl {margin:0; line-height:1.8;}
+dt {font-weight:bold; margin:1em 0 0;}
+dd {margin:0; color:#444;}
+dd, dd * {font-size:8pt;}
+/*vnorena dl*/
+dl dl dt {margin:0.5em 0 0 2em;}
+dl dl dd {margin:0 0 0 2em;}
+/*tabulky*/
+table {border-collapse:collapse; margin:0 auto; width:100%; margin-bottom:1em;}
+table * {font-size:8pt;}
+table th, table td {text-align:center; padding:0.2em; border:1px solid #686057;}
+table th {background:black; font-weight:normal; color:white;}
+table td {background:white;}
+caption {padding:0.5em 0; color:#B48F70; font-size:8pt;}
+table tr:hover td {background-color:#FFF8CC;}
+
+#text .img {border-width:1px; border-style:solid; font-size:8pt; line-height:2em; padding:0.5em; width:180px; text-align:center; text-indent:0;}
+#text .img a {text-decoration:none;}
+#text .img a span {text-decoration:underline;}
+.img.zel {background:#F1F3A9; border-color:#E6E95F;}
+.img.fial {background:#E8E4EF; border-color:#D2CADF;}
+.img.mod {background:#DDE7F7; border-color:#9EBAE9;}
+.img.sed {background:#EEE; border-color:#CCC;}
+.img.mzel {background:#DFF2F0; border-color:#ABDED9;}
+.img.cer {background:#FDDCC4; border-color:#FBC49B;}
+.img.hn {background:#DACEC2; border-color:#C0AC98;}
+#text .img.l {margin:0.5em 1.5em 0.5em 0;}
+#text .img.r {margin:0.5em 0 0.5em 1.5em;}
+
+#text .imgc {text-indent:0; text-align:center; margin-top:0.5em;}
+#text .imgc img {background:#DDE7F7; border:1px solid #9EBAE9; padding:0.5em;}
+
+/*float, clear*/
+.l {float:left;}
+.r {float:right;}
+.clbo {clear:both;}
+.clne {clear:none !important;}
+
+.pt0 {padding-top:0.5em !important;}
+
+@media screen, projection {
+	html, body {height:100%;}
+	body {margin:0; padding:0; background:black url('grafika/blek.gif') repeat-y center;}
+	
+	/*text*/
+	#stranka {width:64em; min-height:100%; max-width:100%; margin:0 auto; background:white url('grafika/pata.gif') repeat-x bottom;}
+	#stranka {height:100%;}
+	body>#stranka {height:auto;}
+	#stranka {position:relative;}
+	
+	/*hlavicka*/
+	#hlava {margin:0; height:6em; background:black url('grafika/kometa.jpg') no-repeat 98% 50%;}
+	#hlava img, #hlava a {font-size:20px; color:white;}
+	
+	/*pata*/
+	#pata {line-height:3em; height:3em; background:black; text-align:center; position:absolute; margin:2em 0 0; width:100%; bottom:0; left:0;}
+	#pata, #pata * {color:white;}
+	#patal {line-height:3em; padding-left:1em; position:absolute; left:0; top:0; margin:0;}
+	#patap {line-height:3em; padding-right:1em; position:absolute; right:0; top:0; margin:0;}
+	#pata a:hover {color:#FC8C67;}
+	
+	/*text (levo)*/
+	#text {width:45.5em; float:left; padding:1.5em 1.5em 5.5em; background: url('grafika/stin.gif') repeat-x;}
+	#text p, #text h2, #text h1, #text table, #text ul {cursor:text;}
+	#text img {cursor:default;}
+	#text a img {cursor:pointer;}
+	
+	/*pravo*/
+	#pravo {float:right; width:14em; padding:1.5em 1em 5.5em 0.5em; background: url('grafika/stin.gif') repeat-x;}
+	#pravo ul, #pravo li, #pravo form, #pravo h4 {margin:0; padding:0;}
+	#pravo li {list-style-type:none;}
+	#pravo div.menu, #pravo ul.mozn, #pravo form {background:#F1EEEB url('grafika/menudole.gif') repeat-x bottom;}
+	
+	/*pravo - nadpis*/
+	#pravo h4 {padding-bottom:6px; line-height:2em; background:#cec7b6 url('grafika/menund.gif') repeat-x bottom; text-align:center; cursor:default;}
+	
+	/*menu*/
+	#pravo .menu {padding-bottom:1px; margin-bottom:1em; }
+		/*menu*/
+	#pravo .menu ul {position:relative; top:-6px; border-top:3px solid #F1EEEB;}
+		/*li*/
+	#pravo .menu li {background:#F1EEEB url('grafika/menu.gif') repeat-x; _behavior:url('li.htc');}
+	#pravo .menu li:hover {background:#f3efea url('grafika/menu2.gif') repeat-x;}
+		/*a*/
+	#pravo .menu a {display:block; color:black; padding:0.5em 0 0.5em 17px; margin-bottom:0; background:url('grafika/menuli.gif') no-repeat 5px 50%; text-decoration:none;}
+	#pravo .menu a:visited {color:#444;}
+	#pravo .menu a:hover {color:black; text-decoration:underline;}
+	#pravo .menu strong a {color:black !important;}
+		/*ul*/
+	#pravo .menu ul ul {margin:0; position:static;}
+	#pravo .menu ul ul a {padding-left:29px; background:url('grafika/menuli2.gif') no-repeat 17px 50%;}
+	
+	/*mozn*/	
+	#pravo ul.mozn {padding:0 0 1em; margin-bottom:1em;}	
+	#pravo ul.mozn li {padding:0.3em; text-align:center;}
+	#pravo ul.mozn a {font-size:8pt;}
+	
+	/*listy*/
+	html, body {scrollbar-face-color:#CCBEAC; scrollbar-track-color:black; scrollbar-highlight-color:#E4DED4; scrollbar-3dlight-color:#72604E; scrollbar-darkshadow-color:#72604E; scrollbar-shadow-color:#CCBEAC; scrollbar-arrow-color:black;}
+}
+
+@media print {
+	html, body {height:100%; padding:0; margin:0; background:white;}
+	#stranka {min-height:100%; background:white;}
+	#pravo, #patap, #hlava {display:none;}
+	#patal {display:inline;}
+	th {color:black; background:#D6D1CD;}
+	br.clbo {display:none;}
+	h1, h2, h3 {page-break-after: avoid;}
+}

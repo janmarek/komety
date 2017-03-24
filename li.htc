@@ -1,0 +1,11 @@
+<component>
+<attach event="onmouseover" onevent="obarvit('#f3efea url(\'grafika/menu2.gif\') repeat-x')">
+<attach event="onmouseout" onevent="obarvit('#F1EEEB url(\'grafika/menu.gif\') repeat-x')">
+
+<script>
+function obarvit(jak) {
+	element.style.background = jak
+}
+</script>
+
+</component>
